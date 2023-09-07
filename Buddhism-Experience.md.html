@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/Documents/Buddhism-Experience.md.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim9.0_v1">
+<meta name="syntax" content="none">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,pre_wrap,prevent_copy=,use_input_for_pc=fallback">
+<meta name="colorscheme" content="lunar">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #c0caf5; background-color: #1a1b26; }
+body { font-family: monospace; color: #c0caf5; background-color: #1a1b26; }
+* { font-size: 1em; }
+.LineNr { color: #3b4261; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+ # My Experience with Buddhism
+
+ In 2013, on the day of my 11 marriage anniversary, my wife divorced me. Nothing could be said or done by me or the members of our church to convince her to stop seeing her boyfriend. Within 2 years, I had to accept that our 2 daughters (ages 4 and 6 at the time of the divorce) would receive their primary male influence from their new step father.
+
+ That's a lot in 3 sentences. A lot of detail was left out.  Most importantly, the irresistible urge to carry out my detailed plans for a murder suicide.
+
+ I didn't lose my Christian faith. I believed. I believed I could do something so horrific that God would suffer. This is a place you don't want to be. It is the most grievous experience of your life, and you can't tell a therapist, a priest or preacher, only your mother. I put that poor woman through unimaginable anxiety and suffering. But each night she told me, &quot;you don't have to commit to persisting in this pain forever, just promise me you will call and we'll drink a beer together tomorrow.&quot;
+
+ That is exactly what I did everyday. Even after I started studying and practicing Buddhism at the Drepung Loseling Monastery in Atlanta, GA. Here I study a Cognitively-Based Compassion Training curriculum which was developed in collaboration with Emory University and His Holiness the Dalai Lama
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
